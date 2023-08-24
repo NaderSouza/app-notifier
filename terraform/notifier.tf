@@ -1,14 +1,14 @@
 # MODULES ORCHESTRATOR
 
 module "network" {
-    source               = "./modules/network"
-    vpc_cidr             = "${var.vpc_cidr}"
-    vpc_az1              = "${var.vpc_az1}"
-    vpc_az2              = "${var.vpc_az2}"
-    vpc_sn_pub_az1_cidr  = "${var.vpc_sn_pub_az1_cidr}"
-    vpc_sn_pub_az2_cidr  = "${var.vpc_sn_pub_az2_cidr}"
-    vpc_sn_priv_az1_cidr = "${var.vpc_sn_priv_az1_cidr}"
-    vpc_sn_priv_az2_cidr = "${var.vpc_sn_priv_az2_cidr}"
+    # source               = "./modules/network"
+    # vpc_cidr             = "10.0.0.0/16"
+    # vpc_az1              = "${var.vpc_az1}"
+    # vpc_az2              = "${var.vpc_az2}"
+    # vpc_sn_pub_az1_cidr  = "${var.vpc_sn_pub_az1_cidr}"
+    # vpc_sn_pub_az2_cidr  = "${var.vpc_sn_pub_az2_cidr}"
+    # vpc_sn_priv_az1_cidr = "${var.vpc_sn_priv_az1_cidr}"
+    # vpc_sn_priv_az2_cidr = "${var.vpc_sn_priv_az2_cidr}"
 }
 
 module "database" {
