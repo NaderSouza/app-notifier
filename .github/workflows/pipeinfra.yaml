@@ -1,4 +1,4 @@
-name: IaC Lifecycle
+name: IaC Checkpoint
 
 on:
   push:
