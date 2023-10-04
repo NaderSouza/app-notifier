@@ -1,18 +1,18 @@
 # MODULES ORCHESTRATOR
 
-module "network" {
-    # source               = "./modules/network"
-    # vpc_cidr             = "10.0.0.0/16"
-    # vpc_az1              = "${var.vpc_az1}"
-    # vpc_az2              = "${var.vpc_az2}"
-    # vpc_sn_pub_az1_cidr  = "${var.vpc_sn_pub_az1_cidr}"
-    # vpc_sn_pub_az2_cidr  = "${var.vpc_sn_pub_az2_cidr}"
-    # vpc_sn_priv_az1_cidr = "${var.vpc_sn_priv_az1_cidr}"
-    # vpc_sn_priv_az2_cidr = "${var.vpc_sn_priv_az2_cidr}"
+module "rede" {
+    source               = "./modules/rede"
+    vpc_cidr             = "10.0.0.0/16"
+    vpc_az1              = "${var.vpc_az1}"
+    vpc_az2              = "${var.vpc_az2}"
+    vpc_sn_pub_az1_cidr  = "${var.vpc_sn_pub_az1_cidr}"
+    vpc_sn_pub_az2_cidr  = "${var.vpc_sn_pub_az2_cidr}"
+    vpc_sn_priv_az1_cidr = "${var.vpc_sn_priv_az1_cidr}"
+    vpc_sn_priv_az2_cidr = "${var.vpc_sn_priv_az2_cidr}"
 }
 
-module "database" {
-    source               = "./modules/database"
+module "dados" {
+    source               = "./modules/dados"
     rds_identifier       = "${var.rds_identifier}"
     rds_sn_group_name    = "${var.rds_sn_group_name}"
     rds_param_group_name = "${var.rds_param_group_name}"

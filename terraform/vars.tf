@@ -79,7 +79,7 @@ variable "ec2_lt_name" {
 variable "ec2_lt_ami" {
     type    = string
     # default = "ami-05fa00d4c63e32376"
-    default = "ami-069aabeee6f53e7bf"
+    default = "ami-02e136e904f3da870"
 }
 
 variable "ec2_lt_instance_type" {
